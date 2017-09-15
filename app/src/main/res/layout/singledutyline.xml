@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:id="@+id/recyclerViewLay"
+    >
+    <TextView
+        android:id="@+id/nazwaWydarzenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:text="winogrona czerwone"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:inputType="text"
+        android:paddingTop="7dp"
+        />
+    <TextView
+        android:id="@+id/dataWydarzenia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nazwaWydarzenia"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Date: "
+        android:textColor="@color/white"
+        android:inputType="text"
+        />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/doneBtn"
+        android:src="@drawable/dutydone"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="17dp"
+        />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/deletebtn"
+        android:src="@drawable/bin2"
+        android:layout_marginTop="19dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="80dp" />
+</RelativeLayout>
+
+

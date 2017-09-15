@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.konrad.organizer.AddDuty"
+    android:background="@drawable/duty2"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/wydarzenieLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="15dp"
+        >
+        <EditText
+            android:id="@+id/wydarzenie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="nazwa wydarzenia"
+            android:textColor="@color/white"
+            android:inputType="text"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="wybrana data"
+        android:paddingLeft="2dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/date2"
+        android:textColor="@color/white"
+        android:layout_below="@+id/wydarzenieLayout"
+        android:inputType="text"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/opisLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="110dp"
+        android:layout_below="@+id/date2"
+        >
+        <EditText
+            android:id="@+id/opisWydarzenia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="opis wydarzenia"
+            android:textColor="@color/white"
+            android:inputType="text"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/opisLayout"
+        android:layout_marginTop="40dp"
+        >
+        <Button
+            android:id="@+id/btnAddToList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/addtodutylist"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/btnGoToList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/gotolistt"
+            android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/clearrlistt"
+            />
+    </LinearLayout>
+</RelativeLayout>
